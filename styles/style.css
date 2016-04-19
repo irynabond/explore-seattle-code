@@ -1,0 +1,172 @@
+html {
+  background: rgb(238,238,238);
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+#background {
+    background-image: url('../images/seattle1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#main-title {
+  font-size: 3.4rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+.main-content {
+  padding-top: 12%;
+}
+
+.search-zip {
+  padding-top: 20px;
+  width: 70%;
+  margin-left: 15%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+
+}
+
+#searching {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid white;
+    font-size: 30px;
+    box-shadow: none;
+}
+
+.btn-container {
+  margin-top: 40px;
+}
+#show-events-btn {
+  background-color: transparent;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid white;
+  font-size: 140%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  box-shadow: none;
+}
+
+#show-events-btn:hover {
+  border: 2px solid white;
+}
+
+
+.pure-button:hover, .pure-button:focus {
+   background-image: none;
+  }
+
+#header {
+  text-align: center;
+  margin: 17px 0 17px 0;
+}
+.event-header {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+#loading {
+  display: none;
+  margin-top: 30px;
+}
+
+[class*="block-grid-"].text-center > li {
+
+  margin: 0.25rem;
+  float: none;
+  display: inline-block;
+  background: white;
+  height: 15rem;
+  vertical-align: top;
+  cursor: pointer;
+
+}
+[class*="block-grid-"].text-center > li:hover {
+  background-color: rgb(249, 249, 249)
+}
+
+.events-content {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+}
+
+
+[class*="block-grid-"] {
+  margin: 0px 0px 0px 0px;
+}
+.content {
+  text-align: left;
+  font-family: 'Varela Round', sans-serif;
+  padding: 25px 7px 7px 7px;
+}
+.content .title, .details {
+  color: #333333;
+  word-break: break-word;
+  width: 100%;
+  line-height: 20px;
+  font-size: 16px;
+}
+p {
+  margin:0;
+  padding: 0;
+}
+.details {
+  font-size: 16px;
+  color: rgb(113, 113, 120);
+  padding-top: 8px;
+}
+.data-details {
+  font-weight: 300;
+  font-size: 14px;
+  color: #999999;
+  padding-top: 5px;
+}
+
+li {
+  position: relative;
+}
+.link {
+  font-size: 15px;
+  position: absolute;
+  bottom: 5px;
+  left:16px;
+}
+
+.row:before, .row.after{
+  display: none;
+}
+
+#arrow {
+  width:60px;
+  display: none;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  z-index: 10;
+  position: fixed;
+  right: 22px;
+  top: 270px;
+}
+
+div .modal-header, .modal-body {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.footer-container {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  color: rgb(113, 113, 120);
+  margin: 20px 0 20px 0;
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE  html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="images/space_needle.ico"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Explore Seattle</title>
+    <link rel="stylesheet" href="libs/animate.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
+    <link rel = "stylesheet" href = "styles/reset.css">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel='stylesheet prefetch' href='http://cdn.foundation5.zurb.com/foundation.css'>
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href = "styles/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body>
+    <div id = "background">
+
+    <div class = "row main-content">
+        <div class = "large-12 columns text-center">
+           <span id = "main-title">What would you like to do today?</span>
+          <form autocomplete="off" class="search-zip">
+            <input id = "searching" type="text" name="text" onkeypress="return searchKeyPress(event);" autofocus>
+         </form>
+      </div>
+    </div>
+
+
+      <div class = "btn-container row">
+        <div class = "large-12 columns text-center">
+          <button id="show-events-btn" class="pure-button" onclick="clickButton()">Show me events</button>
+          <div id="loading">
+            <img class = "load" src= "images/ring.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "events-content row">
+      <div id = "header"></div>
+      <ul class='events-list large-block-grid-5 medium-block-grid-3 small-block-grid-1 text-center'></ul>
+      <div id = "footer"></div>
+    </div>
+    <div id = "arrow">
+        <img class = "arrow-up" src = "images/arrows.svg" onclick = "scroll()">
+    </div>
+
+    <script type = "text/javascript" src = "libs/jquery-2.1.1.js"></script>
+    <script src='http://cdn.foundation5.zurb.com/foundation.js'></script>
+    <script type="text/javascript" src = "script/script.js"></script>
+    <script type = "text/javascript" src = "script/api-call.js"></script>
+    <script type="text/javascript" src = "libs/moment.js"></script>
+    <script type="text/javascript" src = "libs/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src = "libs/bootbox.min.js"></script>
+    <script src="libs/animatedModal.min.js"></script>
+    <script src="libs/modal.js"></script>
+  </body>
+</html>
