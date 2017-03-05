@@ -48,7 +48,7 @@ function callApi(text, defArr) {
     var deferred = $.Deferred();
     defArr.push(deferred);
     $.ajax({
-      url: "https://api.meetup.com/2/open_events.json?zip=98109&time=,1d&topic=" + text + "&key=595675274d4211175b522771323d075",
+      url:"https://api.meetup.com/2/open_events?&sign=true&photo-host=public&zip=98109&country=usa&topic=" + text + "&city=seattle&state=wa&key=595675274d4211175b522771323d075",
       type: "get",
       dataType: "jsonp",
       success: function(result) {
